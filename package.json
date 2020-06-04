@@ -1,0 +1,59 @@
+{
+  "name": "mydemo",
+  "version": "0.1.2",
+  "private": false,
+  "main": "lib/mydemo.umd.min.js",
+  "description": "",
+  "keywords": [
+    "demo"
+  ],
+  "author": "alex",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dushusir/mydemo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dushusir/mydemo/issues"
+  },
+  "homepage": "https://github.com/dushusir/mydemo",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name mydemo --dest lib src/packages/index.js",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "neo-async": "^2.6.1",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
